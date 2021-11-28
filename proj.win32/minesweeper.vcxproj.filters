@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\HelloWorldScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\BoardMap.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\Mine.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cocos\precheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\HelloWorldScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\BoardMap.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\Mine.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Mines\Default.png">
+      <Filter>Resources\Mines</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\fonts\Marker Felt.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\fonts\arial.ttf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\res\.gitkeep">
+      <Filter>Resources\res</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{4578AC6F-661E-3456-8708-B55C38FCDFD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Mines">
+      <UniqueIdentifier>{D6095ED3-1FA4-3EB5-97EF-213EB7803EF7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{44159B0E-7CDA-3EDA-88E6-8E612550F0BA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\res">
+      <UniqueIdentifier>{6FC0E5CE-D361-35E1-B830-5371C2C055C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{185B2E6A-A249-309F-826B-3E822C8C82DA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{E6A51163-9516-31BF-858A-A578F58852B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{BED43428-F3E0-3EEB-9D71-F737722D7773}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
