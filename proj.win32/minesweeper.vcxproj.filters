@@ -42,6 +42,9 @@
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Mines\Default.png">
       <Filter>Resources\Mines</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Mines\Dug.png">
+      <Filter>Resources\Mines</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\fonts\Marker Felt.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>

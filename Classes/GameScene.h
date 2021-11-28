@@ -8,19 +8,18 @@
 
 USING_NS_CC;
 
-class GameScene : public Scene
-{
+class GameScene final : public Scene {
 public:
   static Scene* createScene();
-  
-  virtual bool init();
+
+  bool init() override;
   void enableListeners();
-  
+
   CREATE_FUNC(GameScene);
-  
+
 public:
   BoardMap* boardMap;
-  bool onTouchesBegan(cocos2d::Touch* touch, cocos2d::Event* event);
+  bool onTouchesBegan(const Touch* touch, Event* event) const;
 };
 
 #endif // __GAMESCENE_H__

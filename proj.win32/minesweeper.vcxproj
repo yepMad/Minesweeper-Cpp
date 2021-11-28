@@ -805,6 +805,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\main.cpp" />
     <ResourceCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\game.rc" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Mines\Default.png" />
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Mines\Dug.png" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\fonts\Marker Felt.ttf" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\fonts\arial.ttf" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\res\.gitkeep" />
