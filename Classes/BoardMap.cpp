@@ -29,8 +29,7 @@ void BoardMap::drawMap(Node* parent) const {
   }
 }
 
-void BoardMap::initializeMines(const Vec2 firstClickPosition) {
-  this->firstMineClicked = getMine(firstClickPosition);
+void BoardMap::initializeMines() {
   hasInitialized = true;
 
   createBombMines();
@@ -62,17 +61,17 @@ void BoardMap::createCounterNearMines() const {
   for (auto y = 0; y < height; ++y) {
     for (auto x = 0; x < width; ++x) {
       const auto mine = &mines[y][x];
-      
+
       if (mine->mineType != none) {
         continue;
       }
 
       if (x != 0) {
-        if (y != 0 && mines[y - 1][x - 1].mineType == bomb) {
+        if (mines[y][x - 1].mineType == bomb) {
           mine->setNearBombCount(mine->getNearBombCount() + 1);
         }
 
-        if (mines[y][x - 1].mineType == bomb) {
+        if (y != 0 && mines[y - 1][x - 1].mineType == bomb) {
           mine->setNearBombCount(mine->getNearBombCount() + 1);
         }
 
@@ -82,11 +81,11 @@ void BoardMap::createCounterNearMines() const {
       }
 
       if (x != width - 1) {
-        if (y != 0 && mines[y - 1][x + 1].mineType == bomb) {
+        if (mines[y][x + 1].mineType == bomb) {
           mine->setNearBombCount(mine->getNearBombCount() + 1);
         }
 
-        if (mines[y][x + 1].mineType == bomb) {
+        if (y != 0 && mines[y - 1][x + 1].mineType == bomb) {
           mine->setNearBombCount(mine->getNearBombCount() + 1);
         }
 
@@ -94,7 +93,7 @@ void BoardMap::createCounterNearMines() const {
           mine->setNearBombCount(mine->getNearBombCount() + 1);
         }
       }
-      
+
       if (y != 0) {
         if (mines[y - 1][x].mineType == bomb) {
           mine->setNearBombCount(mine->getNearBombCount() + 1);
@@ -139,7 +138,8 @@ void BoardMap::onClick(const Vec2 location) {
   }
 
   if (!hasInitialized) {
-    initializeMines(location);
+    this->firstMineClicked = getMine(location);
+    initializeMines();
   }
 
   mine->dig();
@@ -180,56 +180,16 @@ MinePosition BoardMap::getRandomMinePosition() const {
 
 bool BoardMap::canPlaceBomb(const int x, const int y) const {
   const auto mine = this->firstMineClicked;
+  const auto isInSquareRange =
+     x == mine->x && y == mine->y // Center
+  || x + 1 == mine->x && y == mine->y // Right
+  || x - 1 == mine->x && y == mine->y // Left
+  || x == mine->x && y + 1 == mine->y // Top
+  || x == mine->x && y - 1 == mine->y // Bottom
+  || x + 1 == mine->x && y + 1 == mine->y // Top-Right
+  || x - 1 == mine->x && y + 1 == mine->y // Top-Left
+  || x + 1 == mine->x && y - 1 == mine->y // Bottom-Right
+  || x - 1 == mine->x && y - 1 == mine->y; // Bottom-Left
 
-  // Center
-  auto isInSquareRange = x == mine->x && y == mine->y;
-  if (isInSquareRange) {
-    return !isInSquareRange;
-  }
-
-  //Right
-  isInSquareRange = x + 1 == mine->x && y == mine->y;
-  if (isInSquareRange) {
-    return !isInSquareRange;
-  }
-
-  //Left
-  isInSquareRange = x - 1 == mine->x && y == mine->y;
-  if (isInSquareRange) {
-    return !isInSquareRange;
-  }
-
-  // Top
-  isInSquareRange = x == mine->x && y + 1 == mine->y;
-  if (isInSquareRange) {
-    return !isInSquareRange;
-  }
-
-  // Bottom
-  isInSquareRange = x == mine->x && y - 1 == mine->y;
-  if (isInSquareRange) {
-    return !isInSquareRange;
-  }
-
-  // Top-Right
-  isInSquareRange = x + 1 == mine->x && y + 1 == mine->y;
-  if (isInSquareRange) {
-    return !isInSquareRange;
-  }
-
-  // Top-Left
-  isInSquareRange = x - 1 == mine->x && y + 1 == mine->y;
-  if (isInSquareRange) {
-    return !isInSquareRange;
-  }
-
-  // Bottom-Right
-  isInSquareRange = x + 1 == mine->x && y - 1 == mine->y;
-  if (isInSquareRange) {
-    return !isInSquareRange;
-  }
-
-  // Bottom-Left
-  isInSquareRange = x - 1 == mine->x && y - 1 == mine->y;
   return !isInSquareRange;
 }

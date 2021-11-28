@@ -20,7 +20,7 @@ public:
   void onClick(Vec2 location);
 
 private:
-  void initializeMines(Vec2 firstClickPosition);
+  void initializeMines();
 
   void openAdjacentMinesAt(const Mine& mine) const;
 
