@@ -31,7 +31,7 @@ private:
   /// <para>Here you can make sure that the player's first click will always be an empty mine</para>
   /// </summary>
   bool canPlaceBomb(int x, int y) const;
-  bool allRemainingMinesAreClosed() const;
+  bool allRemainingClosedMinesAreBombs() const;
 
 public:
   int width, height, qtyBombs;

@@ -150,7 +150,7 @@ void BoardMap::onClick(const Vec2 location) {
   switch (mine->mineType) {
     case none:
     case counter:
-      hasWin = allRemainingMinesAreClosed();
+      hasWin = allRemainingClosedMinesAreBombs();
       break;
     case bomb:
       hasGameOver = true;
@@ -205,7 +205,7 @@ bool BoardMap::canPlaceBomb(const int x, const int y) const {
   return !isInSquareRange;
 }
 
-bool BoardMap::allRemainingMinesAreClosed() const {
+bool BoardMap::allRemainingClosedMinesAreBombs() const {
   for (auto y = 0; y < height; ++y) {
     for (auto x = 0; x < width; ++x) {
       const auto mine = &mines[y][x];
