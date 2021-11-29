@@ -19,8 +19,7 @@ enum click_type {
 
 class BoardMap {
 public:
-  BoardMap(int width, int height, int qtyBombs);
-
+  void initData(int width, int height, int qtyBombs);
   void drawMap(Node* parent) const;
   void onClick(Vec2 location, click_type clickType);
 
@@ -53,7 +52,7 @@ public:
   bool getWin() const { return hasWin; }
 
 private:
-  Mine* firstMineClicked;
+  Mine* firstMineClicked = nullptr;
   int qtyMinesFlagged = 0;
 
   bool hasInitialized = false;

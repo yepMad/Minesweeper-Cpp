@@ -1,17 +1,16 @@
 #include "BoardMap.h"
 
-BoardMap::BoardMap(const int width, const int height, const int qtyBombs):
-  width(width),
-  height(height),
-  qtyBombs(qtyBombs),
-  mines(new Mine*[height]),
-  firstMineClicked(nullptr) {
-
+void BoardMap::initData(const int width, const int height, const int qtyBombs) {
+  this->width = width;
+  this->height = height;
+  this->qtyBombs = qtyBombs;
+  
+  mines = new Mine*[height];
+  
   for (auto i = 0; i < height; i++) {
     mines[i] = new Mine[width];
   }
 }
-
 
 void BoardMap::drawMap(Node* parent) const {
   for (auto y = 0; y < height; ++y) {

@@ -15,22 +15,29 @@ public:
   static Scene* createScene();
 
   bool init() override;
+  void gameOver();
+  void win();
+  
   void enableListeners();
   void enableHeaderItems();
+  
   void clockTick();
-  bool onTouchesBegan(const Touch* touch, Event* event);
-  void onMouseDown(Event* event) const;
   void updateFlagsCounter() const;
+  
+  bool onTouchesBegan(const Touch* touch, Event* event);
+  void onMouseDown(Event* event);
 
   CREATE_FUNC(GameScene);
 
 public:
-  BoardMap* boardMap;
+  BoardMap boardMap;
   int seconds;
 
 private:
   HeaderItem* timerHeaderItem = new HeaderItem();
   HeaderItem* flagsCounterHeaderItem = new HeaderItem();
+  Node* createRestartButton();
+  void restart();
 };
 
 #endif // __GAMESCENE_H__

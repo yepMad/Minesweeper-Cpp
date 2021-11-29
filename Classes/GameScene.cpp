@@ -4,6 +4,7 @@
 #include <iomanip>
 
 #include "HeaderItem.h"
+#include "ui/UIButton.h"
 
 USING_NS_CC;
 
@@ -24,8 +25,8 @@ bool GameScene::init() {
     return false;
   }
 
-  boardMap = new BoardMap(14, 18, 40);
-  boardMap->drawMap(this);
+  boardMap.initData(14, 18, 40);
+  boardMap.drawMap(this);
 
   this->enableHeaderItems();
   this->enableListeners();
@@ -62,7 +63,7 @@ void GameScene::enableHeaderItems() {
   // Flags counter
   flagsCounterHeaderItem->init();
   flagsCounterHeaderItem->addIcon(icon_flag);
-  flagsCounterHeaderItem->addLabel(to_string(boardMap->qtyBombs));
+  flagsCounterHeaderItem->addLabel(to_string(boardMap.qtyBombs));
   flagsCounterHeaderItem->setPosition(Vec2(
     VISIBLE_SIZE.width - flagsCounterHeaderItem->getContentSize().width / 2 -
     20,
@@ -86,29 +87,60 @@ void GameScene::clockTick() {
 }
 
 
+void GameScene::win() {
+  const auto restartButton = createRestartButton();
+  const auto labelText = Label::createWithTTF("VOCÊ GANHOU!", font_arial, 20);
+  
+  labelText->setColor(Color3B::GREEN);
+  labelText->setPosition(Vec2(VISIBLE_SIZE.width / 2, timerHeaderItem->getPosition().y - 60));
+
+  this->addChild(labelText, 2);
+  this->addChild(restartButton, 3);
+  
+  this->unschedule(CLOCK_TICK_SCHEDULE_KEY);
+}
+
+void GameScene::gameOver() {
+  const auto restartButton = createRestartButton();
+  const auto labelText = Label::createWithTTF("VOCÊ PERDEU!", font_arial, 20);
+  
+  labelText->setColor(Color3B::RED);
+  labelText->setPosition(Vec2(VISIBLE_SIZE.width / 2, timerHeaderItem->getPosition().y - 60));
+
+  this->addChild(labelText, 2);
+  this->addChild(restartButton, 3);
+  
+  this->unschedule(CLOCK_TICK_SCHEDULE_KEY);
+}
+
+void GameScene::restart() {
+  Director::getInstance()->replaceScene(createScene());
+}
+
+
 bool GameScene::onTouchesBegan(const Touch* touch, Event* event) {
-  if (boardMap->hasEndGame()) {
+  if (boardMap.hasEndGame()) {
     return true;
   }
 
-  boardMap->onClick(touch->getLocation(), click_type::left);
+  boardMap.onClick(touch->getLocation(), click_type::left);
   updateFlagsCounter();
   
-  if (boardMap->getGameOver()) {
-    CCLOG("GameOver!");
-    this->unschedule(CLOCK_TICK_SCHEDULE_KEY);
+  if (boardMap.getGameOver()) {
+    gameOver();
+    return true;
   }
 
-  if (boardMap->getWin()) {
-    CCLOG("Win!");
-    this->unschedule(CLOCK_TICK_SCHEDULE_KEY);
+  if (boardMap.getWin()) {
+    win();
+    return true;
   }
 
   return true;
 }
 
-void GameScene::onMouseDown(Event* event) const {
-  if (boardMap->hasEndGame()) {
+void GameScene::onMouseDown(Event* event) {
+  if (boardMap.hasEndGame()) {
     return;
   }
 
@@ -117,11 +149,26 @@ void GameScene::onMouseDown(Event* event) const {
     return;
   }
 
-  boardMap->onClick(eventMouse->getLocationInView(), click_type::right);
+  boardMap.onClick(eventMouse->getLocationInView(), click_type::right);
   updateFlagsCounter();
 }
 
+
 void GameScene::updateFlagsCounter() const {
   flagsCounterHeaderItem->setLabelText(
-    to_string(boardMap->qtyBombs - boardMap->getFlagsQty()));
+    to_string(boardMap.qtyBombs - boardMap.getFlagsQty()));
 }
+
+Node* GameScene::createRestartButton() {
+  const auto restartButton = ui::Button::create(labels_white);
+  restartButton->setPosition(Vec2(VISIBLE_SIZE.width / 2, timerHeaderItem->getPosition().y - 100));
+  restartButton->addTouchEventListener(CC_CALLBACK_0(GameScene::restart, this));
+  
+  const auto restartText = Label::createWithTTF("Reiniciar", font_arial, 16);
+  restartText->setColor(Color3B::BLACK);
+  restartText->setPosition(Vec2(restartButton->getContentSize().width / 2, restartButton->getContentSize().height/2));
+  
+  restartButton->addChild(restartText, 2);
+  return restartButton;
+}
+
