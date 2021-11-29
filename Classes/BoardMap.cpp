@@ -130,17 +130,35 @@ void BoardMap::openAdjacentMinesAt(const Mine& mine) const {
 }
 
 
-void BoardMap::onClick(const Vec2 location) {
+void BoardMap::onClick(const Vec2 location, const click_type clickType) {
   auto const mine = getMine(location);
   if (mine == nullptr) {
     return;
   }
 
+  switch (clickType) {
+    case click_type::left:
+      onMineInteracts(mine);
+      break;
+    case click_type::right:
+      setMineFlag(mine, !mine->isFlagged);
+      break;
+    default:
+      break;
+  }
+}
+
+void BoardMap::onMineInteracts(Mine* mine) {
+  if (mine->wasDug) {
+    return;
+  }
+  
   if (!hasInitialized) {
-    this->firstMineClicked = getMine(location);
+    this->firstMineClicked = mine;
     initializeMines();
   }
-
+  
+  setMineFlag(mine, false);
   mine->dig();
 
   if (mine->mineType == none) {
@@ -157,6 +175,24 @@ void BoardMap::onClick(const Vec2 location) {
       break;
     default:
       break;
+  }
+}
+
+void BoardMap::setMineFlag(Mine* mine, const bool isFlagged) {
+  if (mine->wasDug) {
+    return;
+  }
+  
+  if (mine->isFlagged == isFlagged) {
+    return;
+  }
+
+  mine->setFlag(isFlagged);
+
+  if (isFlagged == true) {
+    qtyMinesFlagged++;
+  } else {
+    qtyMinesFlagged--;
   }
 }
 

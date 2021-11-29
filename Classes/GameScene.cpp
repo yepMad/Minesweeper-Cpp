@@ -39,12 +39,15 @@ bool GameScene::init() {
 
 
 void GameScene::enableListeners() {
-  const auto listener = EventListenerTouchOneByOne::create();
+  const auto touchListener = EventListenerTouchOneByOne::create();
+  const auto mouseListener = EventListenerMouse::create();
 
-  listener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchesBegan, this);
-  listener->setSwallowTouches(true);
+  mouseListener->onMouseDown = CC_CALLBACK_1(GameScene::onMouseDown, this);
+  touchListener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchesBegan, this);
+  touchListener->setSwallowTouches(true);
 
-  _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+  _eventDispatcher->addEventListenerWithSceneGraphPriority(touchListener, this);
+  _eventDispatcher->addEventListenerWithFixedPriority(mouseListener, 1);
 }
 
 void GameScene::enableHeaderItems() {
@@ -88,7 +91,9 @@ bool GameScene::onTouchesBegan(const Touch* touch, Event* event) {
     return true;
   }
 
-  boardMap->onClick(touch->getLocation());
+  boardMap->onClick(touch->getLocation(), click_type::left);
+  updateFlagsCounter();
+  
   if (boardMap->getGameOver()) {
     CCLOG("GameOver!");
     this->unschedule(CLOCK_TICK_SCHEDULE_KEY);
@@ -100,4 +105,23 @@ bool GameScene::onTouchesBegan(const Touch* touch, Event* event) {
   }
 
   return true;
+}
+
+void GameScene::onMouseDown(Event* event) const {
+  if (boardMap->hasEndGame()) {
+    return;
+  }
+
+  const auto eventMouse = static_cast<EventMouse*>(event);
+  if (eventMouse->getMouseButton() != EventMouse::MouseButton::BUTTON_RIGHT) {
+    return;
+  }
+
+  boardMap->onClick(eventMouse->getLocationInView(), click_type::right);
+  updateFlagsCounter();
+}
+
+void GameScene::updateFlagsCounter() const {
+  flagsCounterHeaderItem->setLabelText(
+    to_string(boardMap->qtyBombs - boardMap->getFlagsQty()));
 }

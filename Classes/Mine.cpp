@@ -24,6 +24,22 @@ void Mine::setNearBombCount(const int number) {
   mineType = nearBombCount > 0 ? counter : none;
 }
 
+void Mine::setFlag(const bool isFlagged) {
+  this->isFlagged = isFlagged;
+
+  if (this->isFlagged) {
+    flag = create(icon_flag);
+    
+    flag->setContentSize(Size(this->getContentSize().width * 0.5, this->getContentSize().width * 0.5));
+    flag->setPosition(this->getContentSize().width/2, this->getContentSize().height/2);
+    
+    this->addChild(flag, 2);
+  } else {
+    this->removeChild(flag, true);
+  }
+}
+
+
 void Mine::dig() {
   if (wasDug)
     return;

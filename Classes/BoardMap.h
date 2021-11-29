@@ -12,15 +12,22 @@ struct MinePosition {
   int y;
 };
 
+enum click_type {
+  left = 0,
+  right = 1,
+};
+
 class BoardMap {
 public:
   BoardMap(int width, int height, int qtyBombs);
 
   void drawMap(Node* parent) const;
-  void onClick(Vec2 location);
+  void onClick(Vec2 location, click_type clickType);
 
 private:
   void initializeMines();
+  void onMineInteracts(Mine* mine);
+  void setMineFlag(Mine* mine, bool isFlagged);
 
   void openAdjacentMinesAt(const Mine& mine) const;
 
@@ -41,12 +48,14 @@ public:
   Mine* getMine(Vec2 location) const;
   
   bool hasEndGame() const { return hasGameOver || hasWin; };
+  int getFlagsQty() const { return qtyMinesFlagged; }
   bool getGameOver() const { return hasGameOver; }
   bool getWin() const { return hasWin; }
 
 private:
   Mine* firstMineClicked;
-  
+  int qtyMinesFlagged = 0;
+
   bool hasInitialized = false;
   bool hasGameOver = false;
   bool hasWin = false;

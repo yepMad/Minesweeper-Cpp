@@ -14,12 +14,14 @@ enum mine_type
 class Mine final : public cocos2d::Sprite  {
 public:
   void dig();
+  void setFlag(bool isFlagged);
   void initialize(int x, int y);
   void setNearBombCount(int number);
   
 public:
   int x, y;
   bool wasDug = false;
+  bool isFlagged = false;
   mine_type mineType = none;
   
   int getNearBombCount() const {
@@ -31,6 +33,7 @@ private:
   
 private:
   int nearBombCount = 0;
+  Sprite* flag = nullptr;
 };
 
 #endif

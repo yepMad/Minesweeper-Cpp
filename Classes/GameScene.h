@@ -19,6 +19,8 @@ public:
   void enableHeaderItems();
   void clockTick();
   bool onTouchesBegan(const Touch* touch, Event* event);
+  void onMouseDown(Event* event) const;
+  void updateFlagsCounter() const;
 
   CREATE_FUNC(GameScene);
 
