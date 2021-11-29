@@ -1,113 +1,107 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\AppDelegate.cpp">
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\AppDelegate.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\HeaderItem.cpp">
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\GameScene.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\GameScene.cpp">
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\BoardMap.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\BoardMap.cpp">
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\Mine.cpp">
       <Filter>Source Files\Classes</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\Mine.cpp">
-      <Filter>Source Files\Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\main.cpp">
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\main.cpp">
       <Filter>Source Files\proj.win32</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cocos\precheader.cpp">
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\precheader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\AppDelegate.h">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\AppDelegate.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\HeaderItem.h">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\FilesPaths.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\FilesPaths.h">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\GameScene.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\GameScene.h">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\BoardMap.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\BoardMap.h">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\Mine.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\Mine.h">
-      <Filter>Source Files\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\main.h">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\main.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\resource.h">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\resource.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Icons\clock.png">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Resources\Icons\clock.png">
       <Filter>Resources\Icons</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Icons\flag.png">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Resources\Icons\flag.png">
       <Filter>Resources\Icons</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Labels\White.png">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Resources\Labels\White.png">
       <Filter>Resources\Labels</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Mines\Default.png">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Resources\Mines\Default.png">
       <Filter>Resources\Mines</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Mines\Dug.png">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Resources\Mines\Dug.png">
       <Filter>Resources\Mines</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\fonts\Marker Felt.ttf">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Resources\fonts\Marker Felt.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\fonts\arial.ttf">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Resources\fonts\arial.ttf">
       <Filter>Resources\fonts</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\res\.gitkeep">
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Resources\res\.gitkeep">
       <Filter>Resources\res</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\game.rc">
+    <ResourceCompile Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\game.rc">
       <Filter>Source Files\proj.win32</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Resources">
-      <UniqueIdentifier>{4578AC6F-661E-3456-8708-B55C38FCDFD5}</UniqueIdentifier>
+      <UniqueIdentifier>{0E15421D-303E-3A6A-AD3E-4B2088B27420}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\Icons">
-      <UniqueIdentifier>{35F8A9D8-A691-35D0-A275-0814CAC58CF6}</UniqueIdentifier>
+      <UniqueIdentifier>{260F5C26-85F5-310C-973F-BB8C3D15E0FE}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\Labels">
-      <UniqueIdentifier>{395A01EC-25C6-3A4E-A622-08EE91DA72B7}</UniqueIdentifier>
+      <UniqueIdentifier>{8B9F3D48-94F2-3AC4-83F0-C096E6E8B14D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\Mines">
-      <UniqueIdentifier>{D6095ED3-1FA4-3EB5-97EF-213EB7803EF7}</UniqueIdentifier>
+      <UniqueIdentifier>{C50EC674-7F97-3667-86DD-56A0933B8D7B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\fonts">
-      <UniqueIdentifier>{44159B0E-7CDA-3EDA-88E6-8E612550F0BA}</UniqueIdentifier>
+      <UniqueIdentifier>{5865D928-3D40-3780-94AA-9C153C681FFC}</UniqueIdentifier>
     </Filter>
     <Filter Include="Resources\res">
-      <UniqueIdentifier>{6FC0E5CE-D361-35E1-B830-5371C2C055C2}</UniqueIdentifier>
+      <UniqueIdentifier>{AF5C7EAD-2AE0-3A86-AF35-47D5733B2016}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{185B2E6A-A249-309F-826B-3E822C8C82DA}</UniqueIdentifier>
+      <UniqueIdentifier>{8E05FB93-B7D9-359A-B740-D28C697ABAB1}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Classes">
-      <UniqueIdentifier>{E6A51163-9516-31BF-858A-A578F58852B7}</UniqueIdentifier>
+      <UniqueIdentifier>{13BEDEA3-1646-3569-A26B-9577E037BAA4}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\proj.win32">
-      <UniqueIdentifier>{BED43428-F3E0-3EEB-9D71-F737722D7773}</UniqueIdentifier>
+      <UniqueIdentifier>{21D8A6DD-E746-3199-B86F-B49B9D94B099}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

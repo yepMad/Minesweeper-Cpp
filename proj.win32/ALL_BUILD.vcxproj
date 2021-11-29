@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6F7AF75B-8378-3377-939C-305FA00B4074}</ProjectGuid>
+    <ProjectGuid>{04CAF952-21E4-362C-B320-E7199DA2AF4D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
@@ -101,10 +101,10 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/minesweeper/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/minesweeper -BC:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -112,12 +112,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/minesweeper/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/minesweeper -BC:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -125,12 +125,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/minesweeper/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/minesweeper -BC:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -138,12 +138,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/minesweeper/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/minesweeper -BC:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -151,76 +151,76 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\ZERO_CHECK.vcxproj">
-      <Project>{E3E747DC-C838-34E6-9C48-0C8CB7D55C3E}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{EDAE7FE8-A0FD-358E-AAE9-DCE2C578F0B9}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\SYNC_RESOURCE-minesweeper.vcxproj">
-      <Project>{1DCE2283-74C8-332A-B71C-3C67FECC62D0}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\SYNC_RESOURCE-minesweeper.vcxproj">
+      <Project>{3256C2FE-A2C9-3605-A875-2A44CA4E012C}</Project>
       <Name>SYNC_RESOURCE-minesweeper</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\cocos\core\cocos2d.vcxproj">
-      <Project>{2931917F-4C47-329C-8626-0FFEA28C8AC4}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{66083AE1-4989-3BF0-B065-0CB50F6BA3C3}</Project>
       <Name>cocos2d</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
-      <Project>{4BF99DC9-97C0-3D05-9AF8-EC33B9E07D8F}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{970174DD-96E0-3593-A206-9C20A94D1327}</Project>
       <Name>ext_clipper</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
-      <Project>{6490A231-7AFB-39A5-A0A3-47DCDEB6F315}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{B341B01E-1BE5-3268-844B-9084DCB2A3C0}</Project>
       <Name>ext_convertUTF</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
-      <Project>{B9C34204-BF45-3EE4-B17B-873B5DBFABF6}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{475455E9-E194-33F4-B70F-1E4747B6178F}</Project>
       <Name>ext_edtaa3func</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\md5\ext_md5.vcxproj">
-      <Project>{38BCF54B-2F6E-31FB-8D67-34B272B08693}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{12E33208-E28F-364E-9BA9-369FA91F67AE}</Project>
       <Name>ext_md5</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
-      <Project>{888459AC-3CED-3EFB-A68C-6FBBAF694493}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{FD1E66A6-3C85-321E-B179-A65EA0723654}</Project>
       <Name>ext_poly2tri</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\recast\ext_recast.vcxproj">
-      <Project>{DFF05109-DB98-3DDF-ABAC-590B8B227039}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{0C72C2AF-7B94-36C1-AE9B-8B30811CF0C4}</Project>
       <Name>ext_recast</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
-      <Project>{EAD0576C-B55F-375E-9753-547AF3EE7275}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{BF7A381B-ED39-309B-B0AD-B1C0B8ABAAC9}</Project>
       <Name>ext_tinyxml2</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
-      <Project>{E7A7FFA6-34F8-360A-9F3D-CDC415689A34}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{8994370A-351D-384F-9648-F0C69C9DB385}</Project>
       <Name>ext_unzip</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
-      <Project>{012C597B-6B0A-340B-9685-EA2F20A76135}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{059C3584-D010-3F86-BB22-130B9CD719FA}</Project>
       <Name>ext_xxhash</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
-      <Project>{17AD72E4-16FE-302D-BBD5-B5EBC2329840}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{87D06AC4-0A25-3116-BA26-5CE61C320B07}</Project>
       <Name>ext_xxtea</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\external.vcxproj">
-      <Project>{7F7AB4A9-D26A-3E92-8466-F15F1883F022}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\external.vcxproj">
+      <Project>{CA5E0F22-5E74-3CDD-8ECD-C4F458301507}</Project>
       <Name>external</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\minesweeper.vcxproj">
-      <Project>{82115C03-02D8-3FC6-9E28-4AED70C64080}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\minesweeper.vcxproj">
+      <Project>{D1C69C69-24BE-3603-8540-4B77FDC20640}</Project>
       <Name>minesweeper</Name>
     </ProjectReference>
   </ItemGroup>

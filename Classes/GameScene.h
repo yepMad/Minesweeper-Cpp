@@ -3,7 +3,6 @@
 
 #include "cocos2d.h"
 #include "BoardMap.h"
-#include "HeaderItem.h"
 
 #define VISIBLE_SIZE Director::getInstance()->getVisibleSize()
 #define CLOCK_TICK_SCHEDULE_KEY "clock_tick"
@@ -34,9 +33,12 @@ public:
   int seconds;
 
 private:
-  HeaderItem* timerHeaderItem = new HeaderItem();
-  HeaderItem* flagsCounterHeaderItem = new HeaderItem();
+  Label* timerHeaderItem = nullptr;
+  Label* flagsCounterHeaderItem = nullptr;
+  
   Node* createRestartButton();
+  Label* createHeaderItem(string initialText, string iconPath, Vec2 position);
+
   void restart();
 };
 

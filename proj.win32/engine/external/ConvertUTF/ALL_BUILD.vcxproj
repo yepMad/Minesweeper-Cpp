@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6F7AF75B-8378-3377-939C-305FA00B4074}</ProjectGuid>
+    <ProjectGuid>{04CAF952-21E4-362C-B320-E7199DA2AF4D}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>ALL_BUILD</ProjectName>
@@ -101,10 +101,10 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\cocos2d\external\ConvertUTF\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/minesweeper/cocos2d/external/ConvertUTF/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\external\ConvertUTF\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/ConvertUTF/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/minesweeper -BC:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32/engine/external/ConvertUTF/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/engine/external/ConvertUTF/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -113,11 +113,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\ConvertUTF\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\ConvertUTF\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/minesweeper/cocos2d/external/ConvertUTF/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/ConvertUTF/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/minesweeper -BC:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32/engine/external/ConvertUTF/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/engine/external/ConvertUTF/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -126,11 +126,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\ConvertUTF\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\ConvertUTF\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/minesweeper/cocos2d/external/ConvertUTF/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/ConvertUTF/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/minesweeper -BC:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32/engine/external/ConvertUTF/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/engine/external/ConvertUTF/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -139,11 +139,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\ConvertUTF\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\ConvertUTF\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/minesweeper/cocos2d/external/ConvertUTF/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/ConvertUTF/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/minesweeper -BC:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/minesweeper/proj.win32/engine/external/ConvertUTF/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/engine/external/ConvertUTF/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -152,21 +152,21 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\ConvertUTF\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\ConvertUTF\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\ZERO_CHECK.vcxproj">
-      <Project>{E3E747DC-C838-34E6-9C48-0C8CB7D55C3E}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{EDAE7FE8-A0FD-358E-AAE9-DCE2C578F0B9}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
-      <Project>{6490A231-7AFB-39A5-A0A3-47DCDEB6F315}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{B341B01E-1BE5-3268-844B-9084DCB2A3C0}</Project>
       <Name>ext_convertUTF</Name>
     </ProjectReference>
   </ItemGroup>

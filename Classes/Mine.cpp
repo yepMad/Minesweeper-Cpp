@@ -35,7 +35,7 @@ void Mine::setFlag(const bool isFlagged) {
     
     this->addChild(flag, 2);
   } else {
-    this->removeChild(flag, true);
+    this->removeChild(flag, false);
   }
 }
 
