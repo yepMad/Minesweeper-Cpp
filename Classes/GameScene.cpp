@@ -105,7 +105,8 @@ void GameScene::gameOver() {
 }
 
 void GameScene::restart() {
-  Director::getInstance()->replaceScene(createScene());
+  _eventDispatcher->removeAllEventListeners();
+  Director::getInstance()->replaceScene(TransitionFade::create(1, createScene()));
 }
 
 
@@ -147,7 +148,7 @@ void GameScene::onMouseDown(Event* event) {
 
 void GameScene::updateFlagsCounter() const {
   flagsCounterHeaderItem->setString(
-    to_string(boardMap.qtyBombs - boardMap.getFlagsQty()));
+  to_string(boardMap.qtyBombs - boardMap.getFlagsQty()));
 }
 
 Node* GameScene::createRestartButton() {
