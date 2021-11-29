@@ -3,8 +3,10 @@
 
 #include "cocos2d.h"
 #include "BoardMap.h"
+#include "HeaderItem.h"
 
 #define VISIBLE_SIZE Director::getInstance()->getVisibleSize()
+#define CLOCK_TICK_SCHEDULE_KEY "clock_tick"
 
 USING_NS_CC;
 
@@ -14,12 +16,19 @@ public:
 
   bool init() override;
   void enableListeners();
+  void enableHeaderItems();
+  void clockTick();
+  bool onTouchesBegan(const Touch* touch, Event* event);
 
   CREATE_FUNC(GameScene);
 
 public:
   BoardMap* boardMap;
-  bool onTouchesBegan(const Touch* touch, Event* event) const;
+  int seconds;
+
+private:
+  HeaderItem* timerHeaderItem = new HeaderItem();
+  HeaderItem* flagsCounterHeaderItem = new HeaderItem();
 };
 
 #endif // __GAMESCENE_H__

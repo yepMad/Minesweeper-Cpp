@@ -793,17 +793,23 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\AppDelegate.h" />
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\HeaderItem.h" />
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\FilesPaths.h" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\GameScene.h" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\BoardMap.h" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\Mine.h" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\main.h" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\resource.h" />
     <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\AppDelegate.cpp" />
+    <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\HeaderItem.cpp" />
     <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\GameScene.cpp" />
     <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\BoardMap.cpp" />
     <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Classes\Mine.cpp" />
     <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\main.cpp" />
     <ResourceCompile Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\proj.win32\game.rc" />
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Icons\clock.png" />
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Icons\flag.png" />
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Labels\White.png" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Mines\Default.png" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\Mines\Dug.png" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\minesweeper\Resources\fonts\Marker Felt.ttf" />
