@@ -76,8 +76,8 @@ void GameScene::clockTick() {
   const auto minutes = seconds / 60;
   const auto second = seconds % 60;
 
-  const auto strMinutes = minutes > 9 ? "" : "0" + to_string(minutes);
-  const auto strSeconds = second > 9 ? "" : "0" + to_string(second);
+  const auto strMinutes = (minutes > 9 ? "" : "0") + to_string(minutes);
+  const auto strSeconds = (second > 9 ? "" : "0") + to_string(second);
 
   timerHeaderItem->setLabelText(strMinutes + ":" + strSeconds);
 }
