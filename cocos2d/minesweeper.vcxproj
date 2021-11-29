@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{D1C69C69-24BE-3603-8540-4B77FDC20640}</ProjectGuid>
+    <ProjectGuid>{AA859273-6C76-36A5-AFA7-9B35F3A0BD7C}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <Platform>Win32</Platform>
     <ProjectName>minesweeper</ProjectName>
@@ -55,25 +55,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\bin\minesweeper\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\bin\minesweeper\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">minesweeper.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">minesweeper</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\bin\minesweeper\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\bin\minesweeper\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">minesweeper.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">minesweeper</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\bin\minesweeper\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\bin\minesweeper\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">minesweeper.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">minesweeper</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\bin\minesweeper\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\bin\minesweeper\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">minesweeper.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">minesweeper</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
@@ -113,7 +113,7 @@
     <PostBuildEvent>
       <Message>												</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/libssl-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -122,7 +122,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/libcrypto-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/libcrypto-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -131,7 +131,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/uv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/uv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -140,7 +140,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/websockets.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/websockets.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -149,7 +149,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/libcurl.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/libcurl.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -158,7 +158,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/glew32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -167,7 +167,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/iconv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/iconv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -176,7 +176,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/libmpg123.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/libmpg123.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -185,7 +185,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/libogg.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/libogg.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -194,7 +194,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/libvorbis.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/libvorbis.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -203,7 +203,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/libvorbisfile.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/libvorbisfile.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -212,7 +212,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/OpenAL32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/OpenAL32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -221,7 +221,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/zlib1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -231,13 +231,13 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;external\Box2D\prebuilt\win32\debug\libbox2d.lib;external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;external\bullet\prebuilt\win32\debug\libbullet.lib;external\jpeg\prebuilt\win32\libjpeg.lib;external\webp\prebuilt\win32\libwebp.lib;external\websockets\prebuilt\win32\websockets.lib;external\openssl\prebuilt\win32\libssl.lib;external\openssl\prebuilt\win32\libcrypto.lib;external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;external\curl\prebuilt\win32\libcurl.lib;external\png\prebuilt\win32\libpng.lib;external\win32-specific\gles\prebuilt\glew32.lib;external\win32-specific\icon\prebuilt\libiconv.lib;external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;external\win32-specific\OggDecoder\prebuilt\libogg.lib;external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;external\glfw3\prebuilt\win32\glfw3.lib;external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/Debug/minesweeper.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Debug/minesweeper.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/Debug/minesweeper.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Debug/minesweeper.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -277,7 +277,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>												</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/libssl-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -286,7 +286,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/libcrypto-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/libcrypto-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -295,7 +295,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/uv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/uv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -304,7 +304,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/websockets.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/websockets.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -313,7 +313,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/libcurl.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/libcurl.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -322,7 +322,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/glew32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -331,7 +331,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/iconv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/iconv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -340,7 +340,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/libmpg123.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/libmpg123.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -349,7 +349,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/libogg.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/libogg.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -358,7 +358,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/libvorbis.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/libvorbis.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -367,7 +367,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/libvorbisfile.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/libvorbisfile.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -376,7 +376,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/OpenAL32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/OpenAL32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -385,7 +385,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/zlib1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -395,13 +395,13 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;external\Box2D\prebuilt\win32\release\libbox2d.lib;external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;external\bullet\prebuilt\win32\release\libbullet.lib;external\jpeg\prebuilt\win32\libjpeg.lib;external\webp\prebuilt\win32\libwebp.lib;external\websockets\prebuilt\win32\websockets.lib;external\openssl\prebuilt\win32\libssl.lib;external\openssl\prebuilt\win32\libcrypto.lib;external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;external\curl\prebuilt\win32\libcurl.lib;external\png\prebuilt\win32\libpng.lib;external\win32-specific\gles\prebuilt\glew32.lib;external\win32-specific\icon\prebuilt\libiconv.lib;external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;external\win32-specific\OggDecoder\prebuilt\libogg.lib;external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;external\glfw3\prebuilt\win32\glfw3.lib;external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/Release/minesweeper.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/Release/minesweeper.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/Release/minesweeper.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/Release/minesweeper.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -441,7 +441,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>												</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/libssl-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -450,7 +450,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/libcrypto-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/libcrypto-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -459,7 +459,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/uv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/uv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -468,7 +468,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/websockets.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/websockets.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -477,7 +477,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/libcurl.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/libcurl.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -486,7 +486,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/glew32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -495,7 +495,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/iconv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/iconv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -504,7 +504,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/libmpg123.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/libmpg123.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -513,7 +513,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/libogg.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/libogg.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -522,7 +522,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/libvorbis.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/libvorbis.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -531,7 +531,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/libvorbisfile.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/libvorbisfile.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -540,7 +540,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/OpenAL32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/OpenAL32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -549,7 +549,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/zlib1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -559,13 +559,13 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;external\Box2D\prebuilt\win32\release\libbox2d.lib;external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;external\bullet\prebuilt\win32\release\libbullet.lib;external\jpeg\prebuilt\win32\libjpeg.lib;external\webp\prebuilt\win32\libwebp.lib;external\websockets\prebuilt\win32\websockets.lib;external\openssl\prebuilt\win32\libssl.lib;external\openssl\prebuilt\win32\libcrypto.lib;external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;external\curl\prebuilt\win32\libcurl.lib;external\png\prebuilt\win32\libpng.lib;external\win32-specific\gles\prebuilt\glew32.lib;external\win32-specific\icon\prebuilt\libiconv.lib;external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;external\win32-specific\OggDecoder\prebuilt\libogg.lib;external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;external\glfw3\prebuilt\win32\glfw3.lib;external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/MinSizeRel/minesweeper.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/MinSizeRel/minesweeper.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/MinSizeRel/minesweeper.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/MinSizeRel/minesweeper.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -604,7 +604,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>												</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/libssl-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/libssl-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -613,7 +613,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/libcrypto-1_1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/libcrypto-1_1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -622,7 +622,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/uv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/uv/prebuilt/win32/uv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/uv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -631,7 +631,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/websockets.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/websockets/prebuilt/win32/websockets.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/websockets.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -640,7 +640,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/libcurl.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/curl/prebuilt/win32/libcurl.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/libcurl.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -649,7 +649,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/glew32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/glew32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -658,7 +658,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/iconv.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/iconv.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -667,7 +667,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/libmpg123.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/libmpg123.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -676,7 +676,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/libogg.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/libogg.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -685,7 +685,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/libvorbis.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/libvorbis.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -694,7 +694,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/libvorbisfile.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/libvorbisfile.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -703,7 +703,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/OpenAL32.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/OpenAL32.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -712,7 +712,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/zlib1.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/zlib1.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -722,13 +722,13 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
     <Link>
-      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;..\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;..\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;..\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;..\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;..\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;..\cocos2d\external\webp\prebuilt\win32\libwebp.lib;..\cocos2d\external\websockets\prebuilt\win32\websockets.lib;..\cocos2d\external\openssl\prebuilt\win32\libssl.lib;..\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;..\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;..\cocos2d\external\curl\prebuilt\win32\libcurl.lib;..\cocos2d\external\png\prebuilt\win32\libpng.lib;..\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;..\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;..\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;..\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;..\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;..\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;..\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;external\Box2D\prebuilt\win32\release\libbox2d.lib;external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;external\bullet\prebuilt\win32\release\libbullet.lib;external\jpeg\prebuilt\win32\libjpeg.lib;external\webp\prebuilt\win32\libwebp.lib;external\websockets\prebuilt\win32\websockets.lib;external\openssl\prebuilt\win32\libssl.lib;external\openssl\prebuilt\win32\libcrypto.lib;external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;external\curl\prebuilt\win32\libcurl.lib;external\png\prebuilt\win32\libpng.lib;external\win32-specific\gles\prebuilt\glew32.lib;external\win32-specific\icon\prebuilt\libiconv.lib;external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;external\win32-specific\OggDecoder\prebuilt\libogg.lib;external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;external\glfw3\prebuilt\win32\glfw3.lib;external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/RelWithDebInfo/minesweeper.lib</ImportLibrary>
-      <ProgramDataBaseFile>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/bin/minesweeper/RelWithDebInfo/minesweeper.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/RelWithDebInfo/minesweeper.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/bin/minesweeper/RelWithDebInfo/minesweeper.pdb</ProgramDataBaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <ProjectReference>
@@ -739,7 +739,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\CMakeLists.txt">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -747,12 +747,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeSystem.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -760,12 +760,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeSystem.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -773,12 +773,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeSystem.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
       <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -786,8 +786,8 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\3.22.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeCXXCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeRCCompiler.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\3.22.0\CMakeSystem.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosBuildSet.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDefine.cmake;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cmake\Modules\CocosConfigDepend.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
@@ -816,64 +816,64 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\precheader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\ZERO_CHECK.vcxproj">
-      <Project>{EDAE7FE8-A0FD-358E-AAE9-DCE2C578F0B9}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\ZERO_CHECK.vcxproj">
+      <Project>{C2EC2E7A-FD5A-38D9-BAE7-920B85B1B94E}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\SYNC_RESOURCE-minesweeper.vcxproj">
-      <Project>{3256C2FE-A2C9-3605-A875-2A44CA4E012C}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\SYNC_RESOURCE-minesweeper.vcxproj">
+      <Project>{5E052C66-BCF6-35EC-B136-C9F43A9C96C3}</Project>
       <Name>SYNC_RESOURCE-minesweeper</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\cocos\core\cocos2d.vcxproj">
-      <Project>{66083AE1-4989-3BF0-B065-0CB50F6BA3C3}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{1CAEF5C2-B595-3E13-812A-769748DABDC5}</Project>
       <Name>cocos2d</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
-      <Project>{970174DD-96E0-3593-A206-9C20A94D1327}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{194B1798-1837-30CB-81C0-B297CD108B94}</Project>
       <Name>ext_clipper</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
-      <Project>{B341B01E-1BE5-3268-844B-9084DCB2A3C0}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{A91E08FC-382A-33CD-A103-5E7B710F3622}</Project>
       <Name>ext_convertUTF</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
-      <Project>{475455E9-E194-33F4-B70F-1E4747B6178F}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{AF04BF57-052D-3B29-A7F3-5F3B8230416E}</Project>
       <Name>ext_edtaa3func</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\md5\ext_md5.vcxproj">
-      <Project>{12E33208-E28F-364E-9BA9-369FA91F67AE}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\external\md5\ext_md5.vcxproj">
+      <Project>{750F08CC-75E4-31E4-A64D-95902006C128}</Project>
       <Name>ext_md5</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
-      <Project>{FD1E66A6-3C85-321E-B179-A65EA0723654}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{71490631-CEFC-3E56-8998-AF98DD75BCCC}</Project>
       <Name>ext_poly2tri</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\recast\ext_recast.vcxproj">
-      <Project>{0C72C2AF-7B94-36C1-AE9B-8B30811CF0C4}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\external\recast\ext_recast.vcxproj">
+      <Project>{2D280213-18E3-3F93-AAC7-89E024EEFD40}</Project>
       <Name>ext_recast</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
-      <Project>{BF7A381B-ED39-309B-B0AD-B1C0B8ABAAC9}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{B0142CAE-01B2-3143-A85E-A141DC0A04E9}</Project>
       <Name>ext_tinyxml2</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
-      <Project>{8994370A-351D-384F-9648-F0C69C9DB385}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{9AC9ABC1-5E51-3501-A625-1BCB2C34022A}</Project>
       <Name>ext_unzip</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
-      <Project>{059C3584-D010-3F86-BB22-130B9CD719FA}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{34338C5E-ED48-3BB7-9BB3-DE07C79D3D30}</Project>
       <Name>ext_xxhash</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
-      <Project>{87D06AC4-0A25-3116-BA26-5CE61C320B07}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{24C251CF-449F-38B3-A2C7-13B8CA711657}</Project>
       <Name>ext_xxtea</Name>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\external.vcxproj">
-      <Project>{CA5E0F22-5E74-3CDD-8ECD-C4F458301507}</Project>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\engine\external\external.vcxproj">
+      <Project>{54E3FCCE-5433-386C-B67B-0960548686FB}</Project>
       <Name>external</Name>
     </ProjectReference>
   </ItemGroup>

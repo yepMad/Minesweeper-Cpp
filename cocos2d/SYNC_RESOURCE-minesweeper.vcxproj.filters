@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\ab6918094db4daa6d763dd1f81d5125e\SYNC_RESOURCE-minesweeper.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\CMakeFiles\SYNC_RESOURCE-minesweeper" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{41F9A7B5-0CB7-3541-ACEC-1E4267411E1B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
