@@ -27,7 +27,7 @@ void Mine::setNearBombCount(const int number) {
 void Mine::setFlag(const bool isFlagged) {
   this->isFlagged = isFlagged;
 
-  if (this->isFlagged) {
+  if (this->isFlagged == true) {
     flag = create(icon_flag);
     
     flag->setContentSize(Size(this->getContentSize().width * 0.5, this->getContentSize().width * 0.5));
