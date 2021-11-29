@@ -13,9 +13,11 @@ enum mine_type
 
 class Mine final : public cocos2d::Sprite  {
 public:
-  void dig();
-  void setFlag(bool isFlagged);
   void initialize(int x, int y);
+  void createLabel(cocos2d::Color3B color, std::string text);
+  void dig();
+  
+  void setFlag(bool isFlagged);
   void setNearBombCount(int number);
   
 public:

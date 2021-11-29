@@ -25,7 +25,7 @@ bool GameScene::init() {
     return false;
   }
 
-  boardMap.initData(14, 18, 40);
+  boardMap.initData(18, 14, 40);
   boardMap.drawMap(this);
 
   this->enableHeaderItems();
@@ -92,7 +92,7 @@ void GameScene::win() {
   const auto labelText = Label::createWithTTF("VOCÊ GANHOU!", font_arial, 20);
   
   labelText->setColor(Color3B::GREEN);
-  labelText->setPosition(Vec2(VISIBLE_SIZE.width / 2, timerHeaderItem->getPosition().y - 60));
+  labelText->setPosition(Vec2(VISIBLE_SIZE.width / 2, timerHeaderItem->getPosition().y));
 
   this->addChild(labelText, 2);
   this->addChild(restartButton, 3);
@@ -105,7 +105,7 @@ void GameScene::gameOver() {
   const auto labelText = Label::createWithTTF("VOCÊ PERDEU!", font_arial, 20);
   
   labelText->setColor(Color3B::RED);
-  labelText->setPosition(Vec2(VISIBLE_SIZE.width / 2, timerHeaderItem->getPosition().y - 60));
+  labelText->setPosition(Vec2(VISIBLE_SIZE.width / 2, timerHeaderItem->getPosition().y));
 
   this->addChild(labelText, 2);
   this->addChild(restartButton, 3);
@@ -161,7 +161,7 @@ void GameScene::updateFlagsCounter() const {
 
 Node* GameScene::createRestartButton() {
   const auto restartButton = ui::Button::create(labels_white);
-  restartButton->setPosition(Vec2(VISIBLE_SIZE.width / 2, timerHeaderItem->getPosition().y - 100));
+  restartButton->setPosition(Vec2(VISIBLE_SIZE.width / 2, timerHeaderItem->getPosition().y - 60));
   restartButton->addTouchEventListener(CC_CALLBACK_0(GameScene::restart, this));
   
   const auto restartText = Label::createWithTTF("Reiniciar", font_arial, 16);

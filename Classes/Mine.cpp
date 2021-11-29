@@ -52,26 +52,24 @@ void Mine::dig() {
       break;
     }
     case counter: {
-      const auto label = Label::createWithTTF(std::to_string(nearBombCount), font_arial, 20);
-      const auto mineSize = this->getSpriteFrame()->getRect().size;
-
-      this->addChild(label, 100);
-
-      label->setColor(Color3B::WHITE);
-      label->setPosition(mineSize.width / 2, mineSize.height / 2);
+      createLabel(Color3B::WHITE, std::to_string(nearBombCount));
       break;
     }
     case bomb: {
-      const auto label = Label::createWithTTF("B", font_arial, 20);
-      const auto mineSize = this->getSpriteFrame()->getRect().size;
-      
-      this->addChild(label, 100);
-
-      label->setColor(Color3B::RED);
-      label->setPosition(mineSize.width / 2, mineSize.height / 2);
+      createLabel(Color3B::RED, "B");
       break;
     }
     default:
       break;
   }
+}
+
+void Mine::createLabel(const Color3B color, const string text) {
+  const auto mineSize = this->getSpriteFrame()->getRect().size;
+  const auto label = Label::createWithTTF(text, font_arial, 24);
+  
+  label->setColor(color);
+  label->setPosition(mineSize.width / 2, mineSize.height / 2);
+  
+  this->addChild(label, 100);
 }
