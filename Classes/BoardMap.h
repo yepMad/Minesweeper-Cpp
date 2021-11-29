@@ -28,7 +28,7 @@ private:
   void onMineInteracts(Mine* mine);
   void setMineFlag(Mine* mine, bool isFlagged);
 
-  void openAdjacentMinesAt(const Mine& mine) const;
+  void openAdjacentMinesAt(const Mine& mine);
 
   void createBombMines() const;
   void createCounterNearMines() const;

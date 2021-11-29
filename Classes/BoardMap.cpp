@@ -108,10 +108,11 @@ void BoardMap::createCounterNearMines() const {
 }
 
 
-void BoardMap::openAdjacentMinesAt(const Mine& mine) const {
+void BoardMap::openAdjacentMinesAt(const Mine& mine) {
   auto const x = mine.x;
   auto const y = mine.y;
 
+  setMineFlag(&mines[y][x], false);
   mines[y][x].dig();
 
   if (mines[y][x].mineType == counter) {
