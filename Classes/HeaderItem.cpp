@@ -2,7 +2,7 @@
 #include "FilesPaths.h"
 
 bool HeaderItem::init() {
-  this->initWithFile("Labels/White.png");
+  this->initWithFile(labels_white);
   this->setScale(1);
 
   return true;
