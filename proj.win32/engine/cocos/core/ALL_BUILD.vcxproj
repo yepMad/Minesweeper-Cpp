@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{04CAF952-21E4-362C-B320-E7199DA2AF4D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\base\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\math\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\network\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\base\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\math\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\network\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\base\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\math\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\network\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp -BC:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32 --check-stamp-file C:/Users/eudes/Desktop/Manifesto/Minesweeper-Cpp/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\base\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\math\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\network\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{EDAE7FE8-A0FD-358E-AAE9-DCE2C578F0B9}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{66083AE1-4989-3BF0-B065-0CB50F6BA3C3}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{970174DD-96E0-3593-A206-9C20A94D1327}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{B341B01E-1BE5-3268-844B-9084DCB2A3C0}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{475455E9-E194-33F4-B70F-1E4747B6178F}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{12E33208-E28F-364E-9BA9-369FA91F67AE}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{FD1E66A6-3C85-321E-B179-A65EA0723654}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{0C72C2AF-7B94-36C1-AE9B-8B30811CF0C4}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{BF7A381B-ED39-309B-B0AD-B1C0B8ABAAC9}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{8994370A-351D-384F-9648-F0C69C9DB385}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{059C3584-D010-3F86-BB22-130B9CD719FA}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{87D06AC4-0A25-3116-BA26-5CE61C320B07}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\engine\external\external.vcxproj">
+      <Project>{CA5E0F22-5E74-3CDD-8ECD-C4F458301507}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
