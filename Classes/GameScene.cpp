@@ -1,5 +1,7 @@
 #include "GameScene.h"
 
+#include <FilesPaths.h>
+
 USING_NS_CC;
 
 Scene* GameScene::createScene() {
@@ -37,6 +39,18 @@ void GameScene::enableListeners() {
 }
 
 bool GameScene::onTouchesBegan(const Touch* touch, Event* event) const {
+  if (boardMap->hasEndGame()) {
+    return true;
+  }
+  
   boardMap->onClick(touch->getLocation());
+  if (boardMap->getGameOver()) {
+    CCLOG("GameOver!");
+  }
+  
+  if (boardMap->getWin()) {
+    CCLOG("Win!");
+  }
+  
   return true;
 }

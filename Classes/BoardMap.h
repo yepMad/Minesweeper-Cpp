@@ -31,17 +31,25 @@ private:
   /// <para>Here you can make sure that the player's first click will always be an empty mine</para>
   /// </summary>
   bool canPlaceBomb(int x, int y) const;
+  bool allRemainingMinesAreClosed() const;
 
 public:
   int width, height, qtyBombs;
   Mine** mines;
 
-  Mine* getMine(Vec2 location) const;
   MinePosition getRandomMinePosition() const;
+  Mine* getMine(Vec2 location) const;
+  
+  bool hasEndGame() const { return hasGameOver || hasWin; };
+  bool getGameOver() const { return hasGameOver; }
+  bool getWin() const { return hasWin; }
 
 private:
   Mine* firstMineClicked;
+  
   bool hasInitialized = false;
+  bool hasGameOver = false;
+  bool hasWin = false;
 };
 
 #endif // __BOARDMAP_SCENE_H__

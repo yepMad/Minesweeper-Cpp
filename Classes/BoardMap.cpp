@@ -1,4 +1,4 @@
-﻿#include "BoardMap.h"
+#include "BoardMap.h"
 
 BoardMap::BoardMap(const int width, const int height, const int qtyBombs):
   width(width),
@@ -39,7 +39,7 @@ void BoardMap::initializeMines() {
 void BoardMap::createBombMines() const {
   auto qtyBombsToDistribute = qtyBombs;
 
-  while (qtyBombsToDistribute) {
+  while (qtyBombsToDistribute--) {
     auto randomPosition = getRandomMinePosition();
     auto isValidPlace = canPlaceBomb(randomPosition.x, randomPosition.y);
 
@@ -53,7 +53,6 @@ void BoardMap::createBombMines() const {
     }
 
     mineBomb->mineType = bomb;
-    --qtyBombsToDistribute;
   }
 }
 
@@ -147,6 +146,18 @@ void BoardMap::onClick(const Vec2 location) {
   if (mine->mineType == none) {
     openAdjacentMinesAt(*mine);
   }
+
+  switch (mine->mineType) {
+    case none:
+    case counter:
+      hasWin = allRemainingMinesAreClosed();
+      break;
+    case bomb:
+      hasGameOver = true;
+      break;
+    default:
+      break;
+  }
 }
 
 
@@ -192,4 +203,18 @@ bool BoardMap::canPlaceBomb(const int x, const int y) const {
   || x - 1 == mine->x && y - 1 == mine->y; // Bottom-Left
 
   return !isInSquareRange;
+}
+
+bool BoardMap::allRemainingMinesAreClosed() const {
+  for (auto y = 0; y < height; ++y) {
+    for (auto x = 0; x < width; ++x) {
+      const auto mine = &mines[y][x];
+      
+      if (!mine->wasDug && mine->mineType != bomb) {
+        return false;
+      }
+    }
+  }
+  
+  return true;
 }
