@@ -36,6 +36,9 @@
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\Mine.h">
       <Filter>Source Files\Classes</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\json.hpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\main.h">
       <Filter>Source Files\proj.win32</Filter>
     </ClInclude>

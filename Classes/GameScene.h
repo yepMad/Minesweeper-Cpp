@@ -3,11 +3,18 @@
 
 #include "cocos2d.h"
 #include "BoardMap.h"
+#include "ui/UIButton.h"
 
 #define VISIBLE_SIZE Director::getInstance()->getVisibleSize()
 #define CLOCK_TICK_SCHEDULE_KEY "clock_tick"
 
 USING_NS_CC;
+
+struct GameData {
+  int width;
+  int height;
+  int qtyMines;
+};
 
 class GameScene final : public Scene {
 public:
@@ -38,8 +45,13 @@ private:
   
   Node* createRestartButton();
   Label* createHeaderItem(string initialText, string iconPath, Vec2 position);
+  ui::Button* createDifficultyButton(const string label) const;
+  GameData getGameData() const;
+  static void setGameData(int width, int height, int qtyMines);
 
-  void restart();
+  void restart() const;
+  void setEasyDifficulty();
+  void setMediumDifficulty();
 };
 
 #endif // __GAMESCENE_H__

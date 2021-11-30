@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\cocos2d\external\Box2D\CMakeFiles\b526307a03dfe05db65efbdcf68d75b7\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D9B84CEF-2707-338B-9F29-EA6EEE725E45}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\CMakeFiles\e9fe9b11a3909a01f41c957f98af1e7c\SYNC_RESOURCE-minesweeper.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\CMakeFiles\SYNC_RESOURCE-minesweeper" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{9A80D1FE-EE05-3672-B220-96FDB708571F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
