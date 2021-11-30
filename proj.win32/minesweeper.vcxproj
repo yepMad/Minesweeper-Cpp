@@ -797,6 +797,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\GameScene.h" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\BoardMap.h" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\Mine.h" />
+    <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\json.hpp" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\main.h" />
     <ClInclude Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\proj.win32\resource.h" />
     <ClCompile Include="C:\Users\eudes\Desktop\Manifesto\Minesweeper-Cpp\Classes\AppDelegate.cpp" />

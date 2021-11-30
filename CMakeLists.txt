@@ -67,6 +67,7 @@ list(APPEND GAME_HEADER
      Classes/GameScene.h
      Classes/BoardMap.h
      Classes/Mine.h
+     Classes/json.hpp
      )
 
 if(ANDROID)

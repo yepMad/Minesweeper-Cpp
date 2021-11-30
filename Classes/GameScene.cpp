@@ -1,9 +1,13 @@
 #include "GameScene.h"
 
+#include <CCUserDefault.h>
 #include <FilesPaths.h>
 #include <iomanip>
 
 #include "ui/UIButton.h"
+#include <json.hpp>
+
+using json = nlohmann::json;
 
 USING_NS_CC;
 
@@ -24,7 +28,8 @@ bool GameScene::init() {
     return false;
   }
 
-  boardMap.initData(18, 14, 40);
+  const auto gameData = getGameData();
+  boardMap.initData(gameData.width, gameData.height, gameData.qtyMines);
   boardMap.drawMap(this);
 
   this->enableHeaderItems();
@@ -61,6 +66,19 @@ void GameScene::enableHeaderItems() {
     to_string(boardMap.qtyBombs),
     icon_flag,
     Vec2(VISIBLE_SIZE.width - 100, VISIBLE_SIZE.height - 60));
+
+  // Easy button
+  const auto easyButton = createDifficultyButton("Fácil");
+  easyButton->setPosition(Vec2(60,VISIBLE_SIZE.height - 105));
+  easyButton->addTouchEventListener(CC_CALLBACK_0(GameScene::setEasyDifficulty, this));
+
+  // Medium
+  const auto mediumButton = createDifficultyButton("Médio");
+  mediumButton->setPosition(Vec2(60,VISIBLE_SIZE.height - 135));
+  mediumButton->addTouchEventListener(CC_CALLBACK_0(GameScene::setMediumDifficulty, this));
+  
+  this->addChild(easyButton);
+  this->addChild(mediumButton);
 }
 
 void GameScene::clockTick() {
@@ -80,12 +98,12 @@ void GameScene::win() {
   const auto restartButton = createRestartButton();
   const auto labelText = Label::createWithTTF("VOCÊ GANHOU!", font_arial, 20);
 
-  labelText->setColor(Color3B::GREEN);
-  labelText->setPosition(Vec2(VISIBLE_SIZE.width / 2,
-                              timerHeaderItem->getPosition().y));
-
   this->addChild(labelText, 2);
   this->addChild(restartButton, 3);
+
+  labelText->setColor(Color3B::MAGENTA);
+  labelText->setPosition(Vec2(VISIBLE_SIZE.width / 2,
+                              VISIBLE_SIZE.height - 50));
 
   this->unschedule(CLOCK_TICK_SCHEDULE_KEY);
 }
@@ -104,9 +122,19 @@ void GameScene::gameOver() {
   this->unschedule(CLOCK_TICK_SCHEDULE_KEY);
 }
 
-void GameScene::restart() {
+void GameScene::restart() const {
   _eventDispatcher->removeAllEventListeners();
   Director::getInstance()->replaceScene(TransitionFade::create(1, createScene()));
+}
+
+void GameScene::setEasyDifficulty() {
+  setGameData(10, 8, 10);
+  restart();
+}
+
+void GameScene::setMediumDifficulty() {
+  setGameData(18, 14, 40);
+  restart();
 }
 
 
@@ -189,4 +217,54 @@ Label* GameScene::createHeaderItem(const string initialText,
 
   this->addChild(sprite);
   return label;
+}
+
+ui::Button* GameScene::createDifficultyButton(const string label) const {
+  const auto easyButton = ui::Button::create(labels_white);
+  easyButton->setScale(0.5);
+
+  const auto easyText = Label::createWithTTF(label, font_arial, 20);
+  easyText->setColor(Color3B::BLACK);
+  easyText->setPosition(Vec2(easyButton->getContentSize().width / 2,
+                                easyButton->getContentSize().height / 2));
+
+  easyButton->addChild(easyText, 2);
+  return easyButton;
+}
+
+
+GameData GameScene::getGameData() const {
+  const auto fs = FileUtils::getInstance();
+  const auto widthPath = fs->getWritablePath() + "settings.json";
+
+  if (!fs->isFileExist(widthPath)) {
+    constexpr auto width = 18;
+    constexpr auto height = 14;
+    constexpr auto qtyMines = 40;
+
+    setGameData(width, height, qtyMines);
+    return { width, height, qtyMines };
+  }
+
+  const auto content = fs->getStringFromFile(widthPath);
+  json jsonData = json::parse(content);
+  
+  const auto width = std::stoi(to_string(jsonData.at("width")));
+  const auto height = std::stoi(to_string(jsonData.at("height")));
+  const auto qtyMines = std::stoi(to_string(jsonData.at("qtyMines")));
+
+  return { width, height, qtyMines };
+}
+
+void GameScene::setGameData(int width, int height, int qtyMines) {
+  const json jsonGameData = {
+    {"width", width},
+    {"height", height},
+    {"qtyMines", qtyMines},
+  };
+
+  const auto fs = FileUtils::getInstance();
+  const auto settingPath = fs->getWritablePath() + "settings.json";
+  
+  const auto success = fs->writeStringToFile(jsonGameData.dump(), settingPath);
 }
